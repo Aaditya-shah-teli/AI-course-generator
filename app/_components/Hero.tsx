@@ -25,8 +25,7 @@ const Hero = () => {
         >
           Get Started
         </Link>
-        <p>hey
-        </p>
+
       </div>
     </div>
   </div>
