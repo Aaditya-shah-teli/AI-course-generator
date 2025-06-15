@@ -6,9 +6,8 @@ import React, { useContext, ChangeEvent } from 'react';
 const TopicDescription = () => {
   const { userCourseInput, setUserCourseInput } = useContext(UserInputContext);
 
-  // ✅ Strongly typed function for handling input changes
   const handleInputChange = (
-    fieldName: 'topic' | 'description', // limit to known fields
+    fieldName: 'topic' | 'description',
     value: string
   ) => {
     setUserCourseInput(prev => ({

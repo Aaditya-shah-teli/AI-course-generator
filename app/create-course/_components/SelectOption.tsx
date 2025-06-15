@@ -28,7 +28,7 @@ const SelectOption = () => {
             <div className='grid grid-cols-2'>
                 <div>
                     <label htmlFor="">Difficulty level</label>
-                    <Select onValueChange={(value) => handleInputChange("level", value)}>
+                    <Select onValueChange={(value) => handleInputChange("level", value)} defaultValue={userCourseInput?.level}>
                         <SelectTrigger className="w-[280px]">
                             <SelectValue placeholder="Theme" />
                         </SelectTrigger>
@@ -41,7 +41,7 @@ const SelectOption = () => {
                 </div>
                 <div>
                     <label htmlFor="">Course Duration</label>
-                    <Select onValueChange={(value) => handleInputChange("duration", value)}>
+                    <Select onValueChange={(value) => handleInputChange("duration", value)} defaultValue={userCourseInput?.description}>
                         <SelectTrigger className="w-[280px]">
                             <SelectValue placeholder="Theme" />
                         </SelectTrigger>
@@ -54,7 +54,7 @@ const SelectOption = () => {
                 </div>
                 <div>
                     <label htmlFor="">Add Videos</label>
-                    <Select onValueChange={(value) => handleInputChange("displayVideo", value)}>
+                    <Select onValueChange={(value) => handleInputChange("displayVideo", value)} defaultValue={userCourseInput?.displayVideo}>
                         <SelectTrigger className="w-[280px]">
                             <SelectValue placeholder="Theme" />
                         </SelectTrigger>
